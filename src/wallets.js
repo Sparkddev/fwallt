@@ -62,7 +62,7 @@ import blockchain from './coins/blockchain.png';
 import binance from './coins/biancesmart.png';
 import ark from './coins/Aktionariat.png';
 
-import fwallet from './bitfrost.webp';
+import fwallet from './bitfrost.png';
 import pmask from './popular/pmask.svg';
 
 
